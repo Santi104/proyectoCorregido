@@ -1,0 +1,136 @@
+@use "../../styles/variables.scss" as *;
+
+.sidebar {
+  background: $sidebarBg;
+  border-right: 1px solid $border;
+  padding: 18px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 6px 10px 6px;
+}
+
+.brandIcon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: $card;
+  border: 1px solid $border;
+  color: $primary;
+}
+
+.brandTitle {
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: $text;
+}
+
+.brandSub {
+  font-size: 12px;
+  font-weight: 600;
+  color: $muted;
+  margin-top: 2px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 6px 4px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  color: $textSoft;
+  text-decoration: none;
+  border: 1px solid transparent;
+
+  &:hover {
+    background: $hover;
+    border-color: $border;
+  }
+}
+
+.active {
+  background: $activeBg; // azul clarito como captura
+  border-color: $activeBorder;
+  color: $primary;
+}
+
+.navIcon {
+  color: currentColor;
+  display: grid;
+  place-items: center;
+}
+
+.navLabel {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.userCard {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 8px;
+  border-top: 1px solid $border;
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  background: $card;
+  border: 1px solid $border;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: $primary;
+  font-size: 12px;
+}
+
+.userMeta {
+  min-width: 0;
+}
+
+.userName {
+  font-weight: 700;
+  font-size: 13px;
+  color: $text;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.userEmail {
+  font-size: 12px;
+  color: $muted;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.logout {
+  width: 100%;
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid $border;
+  background: $card;
+  padding: 10px 12px;
+  font-weight: 700;
+  cursor: pointer;
+  color: $text;
+}

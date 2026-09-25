@@ -1,0 +1,20 @@
+@use "../../styles/variables.scss" as *;
+
+.wrap { display: grid; gap: 6px; }
+.label { font-size: 12px; font-weight: 800; color: $textSoft; }
+
+.ta {
+  min-height: 92px;
+  border-radius: 10px;
+  border: 1px solid $border;
+  background: $inputBg;
+  padding: 10px 12px;
+  outline: none;
+  resize: vertical;
+  font-weight: 600;
+
+  &:focus {
+    border-color: $activeBorder;
+    box-shadow: 0 0 0 3px rgba(16, 88, 248, 0.12);
+  }
+}

@@ -1,0 +1,75 @@
+@use "../../styles/variables.scss" as *;
+
+.page { display: grid; gap: 14px; }
+
+.title {
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.8px;
+  color: $text;
+}
+
+.sub { color: $muted; font-weight: 600; font-size: 13px; margin-top: -6px; }
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.quick { padding: 16px; }
+.alerts { padding: 16px; }
+
+.blockTitle { font-weight: 900; color: $text; }
+.blockSub { margin-top: 4px; color: $muted; font-weight: 600; font-size: 12px; }
+
+.quickGrid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.quickBtn {
+  height: 72px;
+  border-radius: 12px;
+  border: 1px solid $border;
+  background: #f7f8fb;
+  display: grid;
+  place-items: center;
+  gap: 8px;
+  cursor: pointer;
+
+  &:hover { background: $hover; }
+}
+
+.quickIcon { width: 18px; height: 18px; border-radius: 6px; background: $primary; opacity: 0.9; }
+.quickText { font-weight: 800; font-size: 13px; color: $text; }
+
+.alertRowDanger, .alertRowWarn {
+  margin-top: 12px;
+  border-radius: 12px;
+  border: 1px solid $border;
+  padding: 12px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alertRowDanger { background: #fff1f1; border-color: #ffd2d2; }
+.alertRowWarn   { background: #fff7ea; border-color: #ffe0b8; }
+
+.alertTitle { font-weight: 900; color: $text; font-size: 13px; }
+.alertSub   { margin-top: 2px; color: $muted; font-weight: 600; font-size: 12px; }
+
+.alertActions {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 1100px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .quickGrid { grid-template-columns: 1fr; }
+}

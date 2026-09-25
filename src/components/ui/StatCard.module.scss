@@ -1,0 +1,37 @@
+@use "../../styles/variables.scss" as *;
+
+.stat {
+  padding: 16px 16px;
+  height: 86px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 12px;
+  font-weight: 800;
+  color: $textSoft;
+}
+
+.value {
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 800;
+  color: $text;
+  letter-spacing: -0.4px;
+}
+
+.icon {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+}
+
+.info { background: $primary; }
+.warning { background: #f59e0b; }
+.danger { background: #ef4444; }
+.success { background: #22c55e; }

@@ -1,0 +1,103 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 16px;
+  align-items: start;
+}
+
+.main { display: grid; gap: 12px; }
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title { font-size: 22px; font-weight: 900; color: #0f172a; }
+.subtitle { font-size: 12px; font-weight: 700; color: #64748b; margin-top: 2px; }
+
+.actionsTop { display: flex; gap: 10px; }
+
+.sectionTitle {
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 900;
+}
+
+.list { padding: 0 14px 14px; display: grid; gap: 12px; }
+
+.alertCard {
+  border: 1px solid #dfe5ee;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.critical { background: #fdecec; border-color: #f8caca; }
+.high { background: #fff1e8; border-color: #fdc7a8; }
+.medium { background: #fff7e2; border-color: #fde7a3; }
+.low { background: #edf8f1; border-color: #bfe6cb; }
+
+.alertTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.alertTitle { font-weight: 900; display: flex; gap: 10px; align-items: center; }
+.alertSub { margin-top: 6px; color: #64748b; font-weight: 700; font-size: 12px; max-width: 900px; }
+
+.close {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 18px;
+  color: #9aa4b2;
+}
+
+.metaGrid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.metaLabel { color: #64748b; font-weight: 900; font-size: 11px; }
+.metaValue { font-weight: 900; margin-bottom: 6px; font-size: 12px; }
+
+.btnRow { display: flex; gap: 10px; justify-content: flex-end; flex-wrap: wrap; }
+
+.side { display: grid; gap: 12px; }
+
+.sideTitle { padding: 14px; font-weight: 900; }
+
+.sideStats {
+  padding: 0 14px 14px;
+  display: grid;
+  gap: 10px;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 800;
+
+    span { color: #64748b; font-size: 12px; font-weight: 800; }
+    b { color: #0f172a; }
+  }
+}
+
+.toggles {
+  padding: 0 14px 14px;
+  display: grid;
+  gap: 10px;
+
+  label {
+    display: flex;
+    gap: 10px;
+    font-weight: 800;
+    color: #334155;
+    font-size: 12px;
+  }
+}

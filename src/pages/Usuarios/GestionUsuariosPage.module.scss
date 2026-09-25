@@ -1,0 +1,60 @@
+@use "../../styles/variables.scss" as *;
+
+.page { display: grid; gap: 12px; }
+.title { font-size: 22px; font-weight: 900; color: $text; }
+.sub { margin-top: -6px; color: $muted; font-weight: 600; font-size: 12px; }
+
+.grid { display: grid; grid-template-columns: 380px 1fr; gap: 14px; align-items: start; }
+.formCard, .listCard { padding: 16px; }
+
+.blockTitle { font-weight: 900; color: $text; }
+.blockSub { margin-top: 4px; color: $muted; font-weight: 600; font-size: 12px; }
+
+.form { margin-top: 10px; display: grid; gap: 10px; }
+
+.err {
+  color: #a01717;
+  font-weight: 800;
+  font-size: 12px;
+  background: #ffecec;
+  border: 1px solid #ffc0c0;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.table { margin-top: 12px; display: grid; gap: 8px; }
+.thead {
+  display: grid;
+  grid-template-columns: 1.4fr 1.2fr 0.6fr 0.7fr 1fr;
+  gap: 10px;
+  color: $muted;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 0 8px;
+}
+
+.tr {
+  display: grid;
+  grid-template-columns: 1.4fr 1.2fr 0.6fr 0.7fr 1fr;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid $border;
+  border-radius: 12px;
+  background: #f7f8fb;
+  padding: 10px 8px;
+}
+
+.nameCell { display: flex; align-items: center; gap: 10px; min-width: 0; }
+.avatar {
+  width: 32px; height: 32px; border-radius: 999px;
+  border: 1px solid $border; background: $card;
+  display: grid; place-items: center;
+  font-weight: 900; color: $primary; font-size: 12px;
+}
+.nameText { font-weight: 900; color: $text; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.muted { color: $muted; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.actions { display: flex; gap: 8px; justify-content: flex-end; }
+
+@media (max-width: 1200px) {
+  .grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,45 @@
+@use "../../styles/variables.scss" as *;
+
+.topbar {
+  height: 64px;
+  background: $topbar;
+  border-bottom: 1px solid $border;
+  padding: 10px 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.welcome {
+  font-weight: 700;
+  color: $text;
+  letter-spacing: -0.2px;
+}
+
+.sub {
+  margin-top: 2px;
+  font-size: 12px;
+  color: $muted;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.pill {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid $border;
+  background: $card;
+  display: grid;
+  place-items: center;
+}
+
+.pillText {
+  font-weight: 800;
+  font-size: 12px;
+  color: $primary;
+}

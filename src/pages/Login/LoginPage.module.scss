@@ -1,0 +1,106 @@
+@use "../../styles/variables.scss" as *;
+
+.page {
+  min-height: 100vh;
+  background: $loginBg;
+  display: grid;
+  place-items: center;
+}
+
+.center {
+  width: 520px;
+  max-width: calc(100vw - 24px);
+  display: grid;
+  gap: 16px;
+}
+
+.brand {
+  text-align: center;
+  padding-bottom: 6px;
+}
+
+.brandTitle {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.6px;
+  color: $text;
+}
+
+.brandSub {
+  margin-top: 6px;
+  font-size: 13px;
+  color: $muted;
+  font-weight: 600;
+}
+
+.loginCard {
+  padding: 18px 18px;
+}
+
+.demoCard {
+  padding: 16px 18px;
+}
+
+.cardTitle {
+  font-weight: 800;
+  color: $text;
+  font-size: 15px;
+}
+
+.cardSub {
+  margin-top: 4px;
+  color: $muted;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.field { margin-top: 12px; display: grid; gap: 6px; }
+.label { font-size: 12px; font-weight: 800; color: $textSoft; }
+
+.input {
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid $border;
+  background: $inputBg;
+  padding: 0 12px;
+  outline: none;
+  font-weight: 600;
+
+  &:focus {
+    border-color: $activeBorder;
+    box-shadow: 0 0 0 3px rgba(16, 88, 248, 0.12);
+  }
+}
+
+.error {
+  margin-top: 10px;
+  color: #a01717;
+  font-weight: 800;
+  font-size: 12px;
+  background: #ffecec;
+  border: 1px solid #ffc0c0;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.fullBtn { width: 100%; margin-top: 12px; }
+
+.demoList {
+  margin-top: 12px;
+  display: grid;
+  gap: 8px;
+}
+
+.demoItem {
+  text-align: left;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid $border;
+  background: #f7f8fb;
+  cursor: pointer;
+
+  &:hover { background: $hover; }
+}
+
+.demoLabel { font-weight: 800; font-size: 13px; color: $text; }
+.demoDesc  { margin-top: 2px; font-size: 12px; color: $muted; font-weight: 600; }

@@ -1,0 +1,93 @@
+@use "../../styles/variables.scss" as *;
+
+.page { display: grid; gap: 14px; }
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title { font-size: 22px; font-weight: 900; color: $text; letter-spacing: -0.5px; }
+.sub { margin-top: 4px; color: $muted; font-weight: 600; font-size: 12px; }
+
+.headerActions { display: flex; gap: 10px; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 14px;
+  align-items: start;
+}
+
+.formCard { padding: 16px; }
+.rightCol { display: grid; gap: 12px; }
+
+.blockTitle { font-weight: 900; color: $text; }
+.blockSub { margin-top: 4px; color: $muted; font-weight: 600; font-size: 12px; }
+
+.sectionTitle {
+  margin-top: 14px;
+  font-weight: 900;
+  color: $text;
+  font-size: 13px;
+}
+
+.formGrid { margin-top: 10px; display: grid; gap: 12px; }
+.twoCols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.dropzone {
+  margin-top: 10px;
+  border: 1px dashed $border;
+  border-radius: 12px;
+  background: #fafbfe;
+  padding: 18px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 6px;
+}
+
+.dzIcon { font-size: 22px; color: $muted; }
+.dzText { font-weight: 800; color: $text; font-size: 13px; }
+.dzSub { color: $muted; font-weight: 600; font-size: 12px; }
+.dzActions { margin-top: 8px; display: flex; gap: 10px; }
+
+.footerActions { margin-top: 12px; display: flex; justify-content: flex-end; gap: 10px; }
+
+.statsCard, .recentCard { padding: 14px; }
+
+.statsList { margin-top: 10px; display: grid; gap: 8px; }
+.statRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background: #f7f8fb;
+  border: 1px solid $border;
+}
+.statLabel { font-weight: 800; font-size: 12px; color: $textSoft; }
+.statValue { font-weight: 900; color: $text; }
+
+.recentTop { display: flex; align-items: center; justify-content: space-between; }
+
+.recentList { margin-top: 10px; display: grid; gap: 8px; }
+.recentItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 12px;
+  border: 1px solid $border;
+  background: #f7f8fb;
+}
+.recentMeta { min-width: 0; }
+.recentRad { font-weight: 900; font-size: 12px; color: $text; }
+.recentName, .recentSvc { color: $muted; font-weight: 600; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+@media (max-width: 1200px) {
+  .grid { grid-template-columns: 1fr; }
+  .rightCol { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,42 @@
+@use "../../styles/variables.scss" as *;
+
+.btn {
+  border-radius: 10px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: transform 0.02s ease, background 0.15s ease, border 0.15s ease;
+
+  &:active { transform: translateY(1px); }
+}
+
+.md { height: 38px; padding: 0 14px; font-size: 13px; }
+.sm { height: 32px; padding: 0 12px; font-size: 12px; }
+
+.primary {
+  background: $btnPrimary;
+  color: #fff;
+  border-color: rgba(0,0,0,0.1);
+
+  &:hover { background: $btnPrimaryHover; }
+}
+
+.outline {
+  background: $card;
+  color: $text;
+  border-color: $border;
+
+  &:hover { background: $hover; }
+}
+
+.ghost {
+  background: transparent;
+  color: $text;
+  border-color: transparent;
+
+  &:hover { background: $hover; }
+}
