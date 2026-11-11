@@ -1,0 +1,8 @@
+node_modules/
+backend/node_modules/
+reports/
+coverage/
+backend/carga.sqlite3
+tests/performance/resultados/
+tests/performance/resumen_carga.csv
+*.log

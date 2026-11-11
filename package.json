@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest",
+    "test:unit": "jest --coverage",
+    "test:e2e": "node tests/e2e/run-e2e.cjs"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -14,11 +17,25 @@
     "react-router-dom": "^6.26.2"
   },
   "devDependencies": {
+    "@babel/core": "^8.1.0",
+    "@babel/preset-env": "^8.0.7",
+    "@babel/preset-react": "^8.0.1",
+    "@babel/preset-typescript": "^8.0.7",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/jest": "^30.0.0",
     "@types/react": "^18.3.4",
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^5.1.4",
+    "babel-jest": "^30.5.2",
     "esbuild": "^0.27.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^30.5.2",
+    "jest-environment-jsdom": "^30.5.2",
+    "jest-junit": "^17.0.0",
+    "jsdom": "^29.1.1",
     "sass": "^1.77.8",
+    "testcafe": "^3.7.7",
     "typescript": "^5.5.4",
     "vite": "^7.3.1"
   }
